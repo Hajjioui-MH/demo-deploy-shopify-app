@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "demo-deploy-app"
+client_id = "37c5b4241920073f027058831e89f8f4"
+application_url = "https://endif-emission-bush-trademark.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://endif-emission-bush-trademark.trycloudflare.com/auth/callback",
+  "https://endif-emission-bush-trademark.trycloudflare.com/auth/shopify/callback",
+  "https://endif-emission-bush-trademark.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "hj-app.myshopify.com"
